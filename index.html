@@ -5,49 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KOLEKSI TERBARU 2026</title>
 <style>
+  <style>
   body { 
     margin: 0; 
     padding: 20px; 
     font-family: Arial, sans-serif; 
     color: #fff; 
-    background-color: #000;
-    background-image: url('bg.jpg'); /* UDAH SAMA DENGAN NAMA FILE */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    background: #000 url('bg.jpg') no-repeat center top fixed;
+    background-size: 500px auto; /* dikecilin lagi biar tajem */
   }
-  .header { text-align: center; margin-bottom: 25px; }
-  .header h1 { font-size: 22px; text-shadow: 0 0 10px #00aaff; }
-  .header p { color: #aaa; font-size: 12px; }
-  .container { max-width: 700px; margin: auto; }
-  .judul { font-weight: bold; margin-bottom: 15px; border-bottom: 2px solid #00aaff; padding-bottom: 8px; text-shadow: 0 0 5px #00aaff; }
-  
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   
   .card { 
-    background: rgba(20,20,20,0.85); /* transparan biar bg keliatan */
-    backdrop-filter: blur(4px);
+    background: rgba(15,15,15,0.95); /* DIBIKIN LEBIH PEKAT */
+    /* backdrop-filter: blur(4px); HAPUS INI */
     border: 1px solid rgba(0,170,255,0.2);
     border-radius: 12px; 
     padding: 16px; 
-    min-height: 130px;
   }
   .card.terbaru { 
     border: 2px solid #00aaff; 
-    background: rgba(0,30,60,0.9); 
+    background: rgba(0,20,40,0.95); /* DIBIKIN LEBIH PEKAT */
     box-shadow: 0 0 15px rgba(0,170,255,0.5);
     grid-column: span 2; 
   }
-  
-  .badge { font-size: 10px; font-weight: 800; padding: 5px 12px; border-radius: 20px; display: inline-block; margin-bottom: 10px; }
-  .badge.terbaru { background: #00aaff; color: #000; }
-  .badge.update { background: rgba(255,255,255,0.1); color: #ccc; }
-  .tanggal { font-size: 18px; font-weight: 800; }
-  .info { font-size: 13px; color: #aaa; margin: 8px 0; }
-  .link { color: #00ddff; font-size: 13px; font-weight: 600; text-decoration: none; }
-  
-  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } .card.terbaru { grid-column: span 1; } }
+</style>
 </style>
 </head>
 <body>
