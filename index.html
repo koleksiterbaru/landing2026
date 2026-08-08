@@ -5,37 +5,72 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KOLEKSI TERBARU 2026</title>
 <style>
-  <style>
   body { 
     margin: 0; 
     padding: 20px; 
     font-family: Arial, sans-serif; 
     color: #fff; 
-    background: #000 url('bg.jpg') no-repeat center top fixed;
-    background-size: 500px auto; /* dikecilin lagi biar tajem */
+    background: #000; /* BG HITAM POLOS */
   }
   
+  .logo {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-top: 10px;
+  }
+  .logo img {
+    width: 280px; /* ATUR UKURAN LOGO DISINI */
+    max-width: 90%;
+    filter: drop-shadow(0 0 15px #00aaff); /* GLOW NEON */
+  }
+
+  .header { text-align: center; margin-bottom: 25px; }
+  .header h1 { font-size: 22px; margin: 0; text-shadow: 0 0 10px #00aaff; }
+  .header p { color: #aaa; font-size: 12px; margin-top: 5px; }
+  
+  .container { max-width: 700px; margin: auto; }
+  .judul { font-weight: bold; margin-bottom: 15px; border-bottom: 2px solid #00aaff; padding-bottom: 8px; text-shadow: 0 0 5px #00aaff; }
+  
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  
   .card { 
-    background: rgba(15,15,15,0.95); /* DIBIKIN LEBIH PEKAT */
-    /* backdrop-filter: blur(4px); HAPUS INI */
-    border: 1px solid rgba(0,170,255,0.2);
+    background: #111; /* PEKAT GA BUREM */
+    border: 1px solid #222;
     border-radius: 12px; 
     padding: 16px; 
+    min-height: 130px;
+    transition: 0.3s;
   }
+  .card:hover { border-color: #00aaff; }
   .card.terbaru { 
     border: 2px solid #00aaff; 
-    background: rgba(0,20,40,0.95); /* DIBIKIN LEBIH PEKAT */
+    background: #0a1a2a; 
     box-shadow: 0 0 15px rgba(0,170,255,0.5);
     grid-column: span 2; 
   }
-</style>
+  
+  .badge { font-size: 10px; font-weight: 800; padding: 5px 12px; border-radius: 20px; display: inline-block; margin-bottom: 10px; }
+  .badge.terbaru { background: #00aaff; color: #000; }
+  .badge.update { background: #2a2a2a; color: #ccc; }
+  .tanggal { font-size: 18px; font-weight: 800; }
+  .info { font-size: 13px; color: #aaa; margin: 8px 0; }
+  .link { color: #00ddff; font-size: 13px; font-weight: 600; text-decoration: none; }
+  
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } .card.terbaru { grid-column: span 1; }
 </style>
 </head>
 <body>
+
+  <!-- LOGO DI SINI -->
+  <div class="logo">
+    <img src="bg.jpg" alt="Info Viral ID">
+  </div>
+
   <div class="header">
     <h1>KOLEKSI TERBARU 2026</h1>
     <p>Update File Terbaru Setiap Hari</p>
   </div>
+  
   <div class="container">
     <div class="judul">📅 Daftar File Update</div>
     <div class="grid">
