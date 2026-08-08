@@ -8,20 +8,21 @@
   body { 
     margin: 0; 
     padding: 20px; 
+    padding-top: 80px; /* biar ga ketimpa logo */
     font-family: Arial, sans-serif; 
     color: #fff; 
-    background: #000; /* BG HITAM POLOS */
+    background: #000;
   }
   
   .logo {
-    text-align: center;
-    margin-bottom: 25px;
-    padding-top: 10px;
+    position: fixed; /* nempel di layar */
+    top: 15px;
+    right: 20px; /* GANTI JADI left: 20px; KALO MAU KIRI */
+    z-index: 999;
   }
   .logo img {
-    width: 280px; /* ATUR UKURAN LOGO DISINI */
-    max-width: 90%;
-    filter: drop-shadow(0 0 15px #00aaff); /* GLOW NEON */
+    width: 120px; /* kecilin logo */
+    filter: drop-shadow(0 0 10px #00aaff); /* glow biru */
   }
 
   .header { text-align: center; margin-bottom: 25px; }
@@ -34,14 +35,12 @@
   .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   
   .card { 
-    background: #111; /* PEKAT GA BUREM */
+    background: #111;
     border: 1px solid #222;
     border-radius: 12px; 
     padding: 16px; 
     min-height: 130px;
-    transition: 0.3s;
   }
-  .card:hover { border-color: #00aaff; }
   .card.terbaru { 
     border: 2px solid #00aaff; 
     background: #0a1a2a; 
@@ -56,12 +55,16 @@
   .info { font-size: 13px; color: #aaa; margin: 8px 0; }
   .link { color: #00ddff; font-size: 13px; font-weight: 600; text-decoration: none; }
   
-  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } .card.terbaru { grid-column: span 1; }
+  @media (max-width: 600px) { 
+    .grid { grid-template-columns: 1fr; } 
+    .card.terbaru { grid-column: span 1; }
+    .logo img { width: 90px; } /* di hp lebih kecil */
+  }
 </style>
 </head>
 <body>
 
-  <!-- LOGO DI SINI -->
+  <!-- LOGO POJOK KAN ATAS -->
   <div class="logo">
     <img src="bg.jpg" alt="Info Viral ID">
   </div>
